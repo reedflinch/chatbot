@@ -5,7 +5,8 @@
   "author": "Courtney <davis_courtney@bah.com>",
   "description": "A simple helpful robot for your Company",
   "dependencies": {
-    "hubot-current-time": "^1.0.0"
+    "hubot-current-time": "^1.0.0",
+    "hubot-open-weather-map": "0.0.2"
   },
   "engines": {
     "node": "0.10.x"
