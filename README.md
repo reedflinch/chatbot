@@ -42,6 +42,7 @@ Then you can interact with hackbot by typing `hackbot help`.
 ### Heroku Integration
 You need to install the [Heroku toolbelt][herokut]. Click the link to download and follow the instructions to get this tool. Once this is installed, do the following in the hackbot directory:  
 
+% heroku login
 % heroku create my-slackbot-appname  
 
 If your Heroku account has been verified you can run the following to enable
