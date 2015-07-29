@@ -54,10 +54,12 @@ and add the Redis to Go addon to your app.
 
 ###Slack Integration
 Now one you will need to integrate your hackbot with [Slack][slack], so you will need to set some environment
-variables. Create a team, then visit https://yourteamname.slack.com/services/new/hubot to add this capability. Then you will be presented with an API token. Use this token in the following terminal command:  
+variables. Create a team, then visit https://yourteamname.slack.com/services/new/hubot to add this capability. Then you will be presented with an API token. Use this token in the following terminal command:
+  
 % heroku config:add HUBOT_SLACK_TOKEN=please-place-your-token-here  
 
 Now deploy your bot to heroku
+
 % git push heroku master  
 % heroku ps:scale web=1  
 
