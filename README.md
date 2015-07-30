@@ -17,16 +17,17 @@ This README is intended to help get you started.
 You will need [Git][git] to make a duplicate of this repository. 
 
 move to a new directory  
-% mkdir hackbot; cd hackbot 
+% mkdir hackbot  
+% cd hackbot   
   
-Make a bare clone of the repository 
+Make a bare clone of the repository  
 % git clone --bare https://github.com/GridIron/hack-a-thon.git  
  
 Mirror-push to your new repository 
 % cd hack-a-thon.git  
 % git push --mirror https://github.com/your-username/your-new-repo.git   
 
-Remove our temporary local repository 
+Remove our temporary local repository  
 % cd ..  
 % rm -rf hack-a-thon.git     
 
