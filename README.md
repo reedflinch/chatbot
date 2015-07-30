@@ -23,7 +23,7 @@ move to a new directory
 Make a bare clone of the repository  
 % git clone --bare https://github.com/GridIron/hack-a-thon.git  
  
-Mirror-push to your new repository 
+Mirror-push to your new repository  
 % cd hack-a-thon.git  
 % git push --mirror https://github.com/your-username/your-new-repo.git   
 
