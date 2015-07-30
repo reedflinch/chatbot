@@ -11,6 +11,9 @@ This README is intended to help get you started.
 [hubot]: http://hubot.github.com
 [generator-hubot]: https://github.com/github/generator-hubot
 
+
+### Duplicating Repo
+
 You will need [Git][git] to make a duplicate of this repository. 
 
 mkdir hackbot; cd hackbot 
