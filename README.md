@@ -14,21 +14,21 @@ This README is intended to help get you started.
 You will need [Git][git] to make a duplicate of this repository. 
 
 mkdir hackbot; cd hackbot 
-# move to a new directory
+# move to a new directory  
 
-git clone --bare https://github.com/GridIron/hack-a-thon.git
-# Make a bare clone of the repository
+git clone --bare https://github.com/GridIron/hack-a-thon.git  
+# Make a bare clone of the repository  
 
-cd hack-a-thon.git
-git push --mirror https://github.com/your-username/your-new-repo.git
-# Mirror-push to your new repository
+cd hack-a-thon.git  
+git push --mirror https://github.com/your-username/your-new-repo.git  
+# Mirror-push to your new repository  
 
-cd ..
-rm -rf hack-a-thon.git  
-# Remove our temporary local repository
+cd ..  
+rm -rf hack-a-thon.git    
+# Remove our temporary local repository  
 
-Now you can make a clone of your new repo
-git clone https://github.com/your-username/your-new-repo.git
+Now you can make a clone of your new repo  
+git clone https://github.com/your-username/your-new-repo.git  
 
 Once you have duplicated this repository. You will need to install [nodejs][nodejs] and [npm][npm] if you haven't already, to get Hubot working. Click the links to download and follow instructions on how to install these tools. 
 
