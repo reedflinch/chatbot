@@ -11,8 +11,10 @@ This README is intended to help get you started.
 [hubot]: http://hubot.github.com
 [generator-hubot]: https://github.com/github/generator-hubot
 
+You will need [Git][git] to clone this repository. 
 Once you have cloned this repository. You will need to install [nodejs][nodejs] and [npm][npm] if you haven't already, to get Hubot working. Click the links to download and follow instructions on how to install these tools. 
 
+[git]: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 [nodejs]: https://nodejs.org/
 [npm]: http://blog.npmjs.org/post/85484771375/how-to-install-npm
 
@@ -20,7 +22,7 @@ Now you should be able to run your bot locally
 
 ### Running hackbot Locally
 
-You can test your hubot by running the following
+You can test your hubot by running the following in the hack-a-thon directory
 
 You can start hackbot locally by running:
 
@@ -30,7 +32,8 @@ You'll see some start up output and a prompt:
 
     [Sat Feb 28 2015 12:38:27 GMT+0000 (GMT)] INFO Using default redis on localhost:6379
 
-Once output has stalled, push enter to generate the following prompt if it is not already present
+Once output has stalled, push enter to generate the following prompt if it is not already present  
+
     hackbot>
 
 Then you can interact with hackbot by typing `hackbot help`.
@@ -41,27 +44,21 @@ Then you can interact with hackbot by typing `hackbot help`.
     ...
 
 ### Heroku Integration
-You need to install the [Heroku toolbelt][herokut]. Click the link to download and follow the instructions to get this tool. Once this is installed, you will need to make an account with [heroku][herokuaccount] do the following in the hackbot directory:  
+You need to install the [Heroku toolbelt][herokut]. Click the link to download and follow the instructions to get this tool. Once this is installed, you will need to make an account with [heroku][herokuaccount] and verify your account. Then do the following in the hack-a-thon directory (Windows users may need to restart their terminal before using Heroku commands):  
 
 % heroku login  
 % heroku create my-slackbot-appname  
-
-If your Heroku account has been verified you can run the following to enable
-and add the Redis to Go addon to your app.  
-
-% heroku addons:add redistogo:nano  
 % heroku config:add HEROKU_URL=http://my-slackbot-appname.herokuapp.com
 
 ###Slack Integration
-Now one you will need to integrate your hackbot with [Slack][slack], so you will need to set some environment
-variables. Create a team, then visit https://yourteamname.slack.com/services/new/hubot to add this capability. Then you will be presented with an API token. Use this token in the following terminal command:
+Now one you will need to integrate your hackbot with [Slack][slack] and set some environment
+variables. Create an account, create a team, then visit https://yourteamname.slack.com/services/new/hubot to add the Hubot capability. Then you will be presented with an API token. Use this token in the following terminal command:
   
 % heroku config:add HUBOT_SLACK_TOKEN=please-place-your-token-here  
 
 Now deploy your bot to heroku
 
-% git push heroku master  
-% heroku ps:scale web=1  
+% git push heroku master   
 
 More detailed documentation can be found on the [deploying hubot onto
 Heroku][deploy-heroku] wiki page. If you run into any problems, checkout Heroku's [docs][heroku-node-docs].  
@@ -76,18 +73,11 @@ Now your hackbot should be working fully in your slack team.
 An example script is included at `scripts/example.coffee`, so check it out to
 get started, along with the [Scripting Guide](scripting-docs).
 
-For many common tasks, there's a good chance someone has already one to do just
-the thing.
+For more information or examples you can visit  
+https://hubot.github.com/docs/  
+https://www.npmjs.com/browse/keyword/hubot-scripts  
 
 [scripting-docs]: https://github.com/github/hubot/blob/master/docs/scripting.md
 
-### Deploying to UNIX or Windows
-
-If you would like to deploy to either a UNIX operating system or Windows.
-Please check out the [deploying hubot onto UNIX][deploy-unix] and [deploying
-hubot onto Windows][deploy-windows] wiki pages.
-
 [heroku-node-docs]: http://devcenter.heroku.com/articles/node-js
 [deploy-heroku]: https://github.com/github/hubot/blob/master/docs/deploying/heroku.md
-[deploy-unix]: https://github.com/github/hubot/blob/master/docs/deploying/unix.md
-[deploy-windows]: https://github.com/github/hubot/blob/master/docs/deploying/windows.md
