@@ -12,23 +12,23 @@ This README is intended to help get you started.
 [generator-hubot]: https://github.com/github/generator-hubot
 
 
-### Duplicating Repo
+### Duplicating Repo  
 
 You will need [Git][git] to make a duplicate of this repository. 
 
-mkdir hackbot; cd hackbot 
-# move to a new directory  
+move to a new directory  
+% mkdir hackbot; cd hackbot 
+  
+Make a bare clone of the repository 
+% git clone --bare https://github.com/GridIron/hack-a-thon.git  
+ 
+Mirror-push to your new repository 
+% cd hack-a-thon.git  
+% git push --mirror https://github.com/your-username/your-new-repo.git   
 
-git clone --bare https://github.com/GridIron/hack-a-thon.git  
-# Make a bare clone of the repository  
-
-cd hack-a-thon.git  
-git push --mirror https://github.com/your-username/your-new-repo.git  
-# Mirror-push to your new repository  
-
-cd ..  
-rm -rf hack-a-thon.git    
-# Remove our temporary local repository  
+Remove our temporary local repository 
+% cd ..  
+% rm -rf hack-a-thon.git     
 
 Now you can make a clone of your new repo  
 git clone https://github.com/your-username/your-new-repo.git  
