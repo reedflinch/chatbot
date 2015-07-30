@@ -11,8 +11,26 @@ This README is intended to help get you started.
 [hubot]: http://hubot.github.com
 [generator-hubot]: https://github.com/github/generator-hubot
 
-You will need [Git][git] to clone this repository. 
-Once you have cloned this repository. You will need to install [nodejs][nodejs] and [npm][npm] if you haven't already, to get Hubot working. Click the links to download and follow instructions on how to install these tools. 
+You will need [Git][git] to make a duplicate of this repository. 
+
+mkdir hackbot; cd hackbot 
+# move to a new directory
+
+git clone --bare https://github.com/GridIron/hack-a-thon.git
+# Make a bare clone of the repository
+
+cd hack-a-thon.git
+git push --mirror https://github.com/your-username/your-new-repo.git
+# Mirror-push to your new repository
+
+cd ..
+rm -rf hack-a-thon.git  
+# Remove our temporary local repository
+
+Now you can make a clone of your new repo
+git clone https://github.com/your-username/your-new-repo.git
+
+Once you have duplicated this repository. You will need to install [nodejs][nodejs] and [npm][npm] if you haven't already, to get Hubot working. Click the links to download and follow instructions on how to install these tools. 
 
 [git]: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 [nodejs]: https://nodejs.org/
@@ -22,7 +40,7 @@ Now you should be able to run your bot locally
 
 ### Running hackbot Locally
 
-You can test your hubot by running the following in the hack-a-thon directory
+You can test your hubot by running the following in the top level of your repo
 
 You can start hackbot locally by running:
 
@@ -44,7 +62,7 @@ Then you can interact with hackbot by typing `hackbot help`.
     ...
 
 ### Heroku Integration
-You need to install the [Heroku toolbelt][herokut]. Click the link to download and follow the instructions to get this tool. Once this is installed, you will need to make an account with [heroku][herokuaccount] and verify your account. Then do the following in the hack-a-thon directory (Windows users may need to restart their terminal before using Heroku commands):  
+You need to install the [Heroku toolbelt][herokut]. Click the link to download and follow the instructions to get this tool. Once this is installed, you will need to make an account with [heroku][herokuaccount] and verify your account. Then do the following in the top level of your repo (Windows users may need to restart their terminal before using Heroku commands):  
 
 % heroku login  
 % heroku create my-slackbot-appname  
