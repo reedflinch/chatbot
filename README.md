@@ -90,4 +90,4 @@ hubot onto Windows][deploy-windows] wiki pages.
 [heroku-node-docs]: http://devcenter.heroku.com/articles/node-js
 [deploy-heroku]: https://github.com/github/hubot/blob/master/docs/deploying/heroku.md
 [deploy-unix]: https://github.com/github/hubot/blob/master/docs/deploying/unix.md
-[deploy-windows]: https://github.com/github/hubot/blob/master/docs/deploying/unix.md
+[deploy-windows]: https://github.com/github/hubot/blob/master/docs/deploying/windows.md
