@@ -12,5 +12,6 @@
   "hubot-open-weather-map",
   "hubot-jenkins-slack",
   "hubot-jenkins",
-  "hubot-jenkins-notifier"
+  "hubot-jenkins-notifier",
+  "hubot-github-repo-event-notifier"
 ]
