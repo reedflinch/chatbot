@@ -11,5 +11,6 @@
   "hubot-shipit",
   "hubot-open-weather-map",
   "hubot-jenkins-slack",
-  "hubot-jenkins"
+  "hubot-jenkins",
+  "hubot-jenkins-notifier"
 ]
